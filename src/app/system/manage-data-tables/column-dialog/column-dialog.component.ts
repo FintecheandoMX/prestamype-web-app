@@ -34,7 +34,6 @@ export class ColumnDialogComponent implements OnInit {
    * Creates the add column form.
    */
   ngOnInit() {
-    console.log("CREANDO LA FORMA");
     this.columnForm = this.formBuilder.group({
       'name': [this.data ? this.data.columnName : '', Validators.required],
       'type': [{ value: this.data ? (this.data.columnDisplayType === '' ? '' : this.getColumnType(this.data.columnDisplayType)) : '', disabled: this.data.type === 'existing' }, Validators.required],
