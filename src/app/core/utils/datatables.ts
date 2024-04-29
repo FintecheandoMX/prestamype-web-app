@@ -21,8 +21,6 @@ export class Datatables {
     private settingsService: SettingsService) { }
 
   public getFormfields(columns: any, dateTransformColumns: string[], dataTableEntryObject: any) {
-
-    console.log("CREANDO LA FORMA");
     return columns.map((column: any) => {
       switch (column.columnDisplayType) {
         case 'INTEGER':
