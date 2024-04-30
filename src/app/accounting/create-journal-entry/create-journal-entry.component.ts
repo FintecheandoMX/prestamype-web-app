@@ -24,7 +24,7 @@ import { NextStepDialogComponent } from '../../configuration-wizard/next-step-di
 export class CreateJournalEntryComponent implements OnInit, AfterViewInit {
 
   /** Minimum transaction date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum transaction date allowed. */
   maxDate = new Date();
   /** Journal entry form. */

@@ -41,7 +41,7 @@ export class IndividualCollectionSheetComponent implements OnInit {
   /** Savings Data */
   savingsData: any = [];
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
   /** Collection Sheet form. */

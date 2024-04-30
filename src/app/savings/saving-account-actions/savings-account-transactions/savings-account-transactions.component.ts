@@ -21,7 +21,7 @@ export class SavingsAccountTransactionsComponent implements OnInit {
   @Input() currencyCode: string;
 
   /** Minimum Due Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Due Date allowed. */
   maxDate = new Date();
   /** Savings account transaction form. */

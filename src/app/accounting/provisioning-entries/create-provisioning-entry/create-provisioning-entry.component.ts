@@ -18,7 +18,7 @@ import { Dates } from 'app/core/utils/dates';
 export class CreateProvisioningEntryComponent implements OnInit {
 
   /** Minimum provisioning date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum provisioning date allowed. */
   maxDate = new Date();
   /** Provisioning entry form. */

@@ -25,7 +25,7 @@ export class EditCashierComponent implements OnInit {
   /** Is Staff ID present. */
   isStaffId = true;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
 

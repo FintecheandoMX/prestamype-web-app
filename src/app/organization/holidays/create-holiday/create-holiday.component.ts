@@ -32,7 +32,7 @@ export class CreateHolidayComponent implements OnInit {
   /** Offices Data */
   officesData: any;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date(2100, 0, 1);
   // Stores office data in a trie-like structure

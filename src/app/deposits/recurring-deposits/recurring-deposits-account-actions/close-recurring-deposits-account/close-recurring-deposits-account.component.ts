@@ -31,7 +31,7 @@ export class CloseRecurringDepositsAccountComponent implements OnInit {
   /** Show payment details */
   showPaymentDetails = false;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
   /** Close Recurring Deposit Account form. */

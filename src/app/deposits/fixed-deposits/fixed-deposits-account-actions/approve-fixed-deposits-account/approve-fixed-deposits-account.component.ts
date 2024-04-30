@@ -19,7 +19,7 @@ import { SettingsService } from 'app/settings/settings.service';
 export class ApproveFixedDepositsAccountComponent implements OnInit {
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum date allowed. */
   maxDate = new Date();
   /** Approve Fixed Deposits Account form. */

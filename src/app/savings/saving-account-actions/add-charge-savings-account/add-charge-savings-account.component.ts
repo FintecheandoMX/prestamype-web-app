@@ -19,7 +19,7 @@ import { Dates } from 'app/core/utils/dates';
 export class AddChargeSavingsAccountComponent implements OnInit {
 
   /** Minimum Due Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Due Date allowed. */
   maxDate = new Date();
   /** Add Savings Charge form. */

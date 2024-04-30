@@ -33,7 +33,7 @@ export class BulkLoanReassignmnetComponent implements OnInit {
   /** Loans. */
   loans: any[] = new Array();
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
 

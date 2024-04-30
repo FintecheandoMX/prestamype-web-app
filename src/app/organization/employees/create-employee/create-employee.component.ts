@@ -25,7 +25,7 @@ import { ContinueSetupDialogComponent } from '../../../configuration-wizard/cont
 export class CreateEmployeeComponent implements OnInit, AfterViewInit {
 
   /** Minimum joining date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum joining date allowed. */
   maxDate = new Date();
   /** Employee form. */

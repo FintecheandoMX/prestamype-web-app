@@ -21,7 +21,7 @@ export class EditEmployeeComponent implements OnInit {
   /** Employee data. */
   employeeData: any;
   /** Minimum joining date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum joining date allowed. */
   maxDate = new Date();
   /** Employee form. */

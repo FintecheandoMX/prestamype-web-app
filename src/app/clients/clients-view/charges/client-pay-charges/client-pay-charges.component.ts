@@ -23,7 +23,7 @@ export class ClientPayChargesComponent implements OnInit {
   /** Transaction Data. */
   transactionData: any;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
 
     /**
      * Retrieves the charge data from `resolve`.

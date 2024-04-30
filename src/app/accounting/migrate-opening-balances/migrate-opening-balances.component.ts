@@ -24,7 +24,7 @@ import { Dates } from 'app/core/utils/dates';
 export class MigrateOpeningBalancesComponent implements OnInit, AfterViewInit {
 
   /** Minimum opening balances date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum opening balances date allowed. */
   maxDate = new Date();
   /** Opening balances form. */

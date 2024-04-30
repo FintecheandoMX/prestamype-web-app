@@ -28,7 +28,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class CreateTaxGroupComponent implements OnInit {
 
   /** Minimum start date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum start date allowed. */
   maxDate = new Date(2100, 0, 1);
   /** Tax Group form. */

@@ -29,7 +29,7 @@ export class CreateChargeComponent implements OnInit {
   /** Income and liability account data */
   incomeAndLiabilityAccountData: any;
   /** Minimum due date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum due date allowed. */
   maxDate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
   /** Repeat every label */

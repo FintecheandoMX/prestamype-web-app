@@ -25,7 +25,7 @@ export class LoanTrancheDetailsComponent implements OnInit {
 
   loanId: number;
   currentPrincipalAmount: number;
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   maxDate = new Date(2100, 0, 1);
   disbursementDataSource: {}[] = [];
   totalMultiDisbursed: number = null;

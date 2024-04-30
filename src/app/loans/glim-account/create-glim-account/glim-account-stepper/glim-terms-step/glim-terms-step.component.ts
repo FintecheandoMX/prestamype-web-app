@@ -15,7 +15,7 @@ export class GlimTermsStepComponent implements OnInit, OnChanges {
   @Input() loansAccountTemplate: any;
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum date allowed. */
   maxDate = new Date(2100, 0, 1);
   /** Loans Account Terms Form */

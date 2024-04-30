@@ -22,7 +22,7 @@ export class WithdrawnByClientComponent implements OnInit {
   /** Loan Id */
   loanId: string;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
   /** Withdrawn By Applicant Loan Form */

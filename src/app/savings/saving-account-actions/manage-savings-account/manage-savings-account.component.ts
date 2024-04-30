@@ -14,7 +14,7 @@ import { SystemService } from 'app/system/system.service';
 export class ManageSavingsAccountComponent implements OnInit {
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum date allowed. */
   maxDate = new Date();
   /** Manage Savings Account form. */

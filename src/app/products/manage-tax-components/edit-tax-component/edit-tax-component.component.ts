@@ -20,7 +20,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class EditTaxComponentComponent implements OnInit {
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum start date allowed. */
   maxDate = new Date();
   /** Tax Component form. */

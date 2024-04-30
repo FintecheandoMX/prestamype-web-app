@@ -27,7 +27,7 @@ import { AlertService } from 'app/core/alert/alert.service';
 export class RunReportComponent implements OnInit {
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum date allowed. */
   maxDate = new Date();
 

@@ -23,7 +23,7 @@ export class RejectLoanComponent implements OnInit {
   /** Reject Loan form. */
   rejectLoanForm: UntypedFormGroup;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
 

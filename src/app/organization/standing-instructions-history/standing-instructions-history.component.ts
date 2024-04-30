@@ -22,7 +22,7 @@ import { Dates } from 'app/core/utils/dates';
 export class StandingInstructionsHistoryComponent implements OnInit {
 
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum Date allowed. */
   maxDate = new Date();
   /** Instruction  form. */

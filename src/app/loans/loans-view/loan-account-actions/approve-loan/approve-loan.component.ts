@@ -25,7 +25,7 @@ export class ApproveLoanComponent implements OnInit {
   /** Association Data */
   associationData: any;
   /** Minimum Date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Loan Id */
   loanId: any;
 

@@ -20,7 +20,7 @@ export class FixedDepositAccountSettingsStepComponent implements OnInit, OnChang
   @Input() fixedDepositsAccountProductTemplate: any;
 
   /** Minimum date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum date allowed. */
   maxDate = new Date();
   /** Fixed Deposits Account Settings Form */

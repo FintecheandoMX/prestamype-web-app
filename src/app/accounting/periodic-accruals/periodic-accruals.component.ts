@@ -18,7 +18,7 @@ import { Dates } from 'app/core/utils/dates';
 export class PeriodicAccrualsComponent implements OnInit {
 
   /** Minimum accrue date allowed. */
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   /** Maximum accrue date allowed. */
   maxDate = new Date();
   /** Periodic accruals form. */

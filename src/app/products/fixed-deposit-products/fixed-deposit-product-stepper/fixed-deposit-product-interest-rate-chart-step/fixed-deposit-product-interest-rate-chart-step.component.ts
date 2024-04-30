@@ -51,7 +51,7 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
   chartSlabsIncentivesDisplayedColumns: string[] = ['incentives'];
   incentivesDisplayedColumns: string[] = ['entityType', 'attributeName', 'conditionType', 'attributeValue', 'incentiveType', 'amount', 'actions'];
 
-  minDate = new Date(2000, 0, 1);
+  minDate = new Date(1950, 0, 1);
   maxDate = new Date(new Date().setFullYear(new Date().getFullYear() + 10));
 
   expandChartSlabIndex: number[] = [];
