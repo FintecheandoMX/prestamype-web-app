@@ -90,6 +90,12 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
     this.datatableColumns = [this.SELECT_NAME_FIELD];
     this.dataObject.columnHeaders.filter((columnHeader: any) => {
       if (!this.datatables.isEntityId(columnHeader.columnName)) {
+        if(columnHeader.columnName==="created_at"){
+          columnHeader.columnName="Fecha de creación";
+        }
+        if(columnHeader.columnName==="updated_at"){
+          columnHeader.columnName="Fecha de actualización";
+        }
         this.datatableColumns.push(columnHeader.columnName);
         return columnHeader;
       }
