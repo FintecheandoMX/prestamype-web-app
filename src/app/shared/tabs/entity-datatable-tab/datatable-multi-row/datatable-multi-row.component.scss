@@ -15,3 +15,16 @@
   text-decoration: line-through;
   color: $orange;
 }
+
+// taken from https://github.com/angular/components/issues/8680            
+.table-container {
+  width: 100vw; // <!-- THIS WORKS for horizontal scrolling (all columns visibile)
+  // width: 100%; // <!-- THIS DOESNT for horizontal scrolling (no scrollbars)
+  // width: 2800px; // <!-- THIS ALSO DOESNT for horizontal scrolling (no scrollbars)
+}
+
+.mat-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
