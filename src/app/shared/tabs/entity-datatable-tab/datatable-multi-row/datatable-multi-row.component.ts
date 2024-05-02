@@ -132,7 +132,9 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
   add() {
     let dataTableEntryObject: any = { locale: this.settingsService.language.code };
     const dateTransformColumns: string[] = [];
+    console.log("this.dataObject.columnHeaders "+this.dataObject.columnHeaders);
     const columns = this.datatables.filterSystemColumns(this.dataObject.columnHeaders);
+    console.log("columns "+columns);
     const formfields: FormfieldBase[] = this.datatables.getFormfields(columns, dateTransformColumns, dataTableEntryObject);
     const data = {
       title: 'Add ' + this.datatableName + ' for ' + this.entityType,
@@ -202,6 +204,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
     if (this.dataObject.columnHeaders) {
       let idx = 0;
       this.dataObject.columnHeaders.some((columnHeader: any) => {
+        console.log("columnHeader.columnName "+columnHeader.columnName);
         if (columnHeader.columnName === columnName) {
           const columnDisplayType = columnHeader.columnDisplayType;
           value = data.row[idx];
@@ -214,6 +217,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
               value = this.numberFormat.transform(value);
             }
           }
+          console.log("VALUE "+value);
           return true;
         }
         idx += 1;
