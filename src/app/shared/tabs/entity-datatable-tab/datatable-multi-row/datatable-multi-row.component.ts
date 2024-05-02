@@ -204,7 +204,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
     if (this.dataObject.columnHeaders) {
       let idx = 0;
       this.dataObject.columnHeaders.some((columnHeader: any) => {
-        console.log("columnHeader.columnName "+columnHeader.columnName);
+        //console.log("columnHeader.columnName "+columnHeader.columnName);
         if (columnHeader.columnName === columnName) {
           const columnDisplayType = columnHeader.columnDisplayType;
           value = data.row[idx];
@@ -217,7 +217,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
               value = this.numberFormat.transform(value);
             }
           }
-          console.log("VALUE "+value);
+          //console.log("VALUE "+value);
           return true;
         }
         idx += 1;
