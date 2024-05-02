@@ -65,6 +65,7 @@ export class ViewDataTableComponent implements OnInit {
    */
   setColumnsTable() {
     this.columnsData.shift();
+    console.log("HEADERS DE LAS COLUMNAS "+this.columnsData);
     // TODO: Figure out a better approach in order to pass only updated parameters instead of all of them.
     this.dataSource = new MatTableDataSource(this.columnsData);
     this.dataSource.paginator = this.paginator;
