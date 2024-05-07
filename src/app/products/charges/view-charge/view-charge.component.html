@@ -42,6 +42,14 @@
         </div>
 
         <div fxFlex="50%" class="mat-body-strong">
+          {{"labels.inputs.PrincipalCharge" | translate}}
+        </div>
+
+        <div fxFlex="50%">
+          {{ chargeData.principalCharge === true | yesNo }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
           {{"labels.inputs.Currency" | translate}}
         </div>
 
