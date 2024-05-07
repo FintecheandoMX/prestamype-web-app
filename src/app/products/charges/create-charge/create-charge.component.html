@@ -178,15 +178,21 @@
             </mat-form-field>
 
             <div fxFlex="48%" fxLayout="row" fxLayoutGap="2%" fxLayout.lt-md="column">
-              <div fxFlex="50%" class="active-wrapper">
+              <div fxFlex="33%" class="active-wrapper">
                 <mat-checkbox labelPosition="before" formControlName="active">
                   {{"labels.status.Active" | translate}}
                 </mat-checkbox>
               </div>
 
-              <div fxFlex="50%" class="penalty-wrapper">
+              <div fxFlex="33%" class="penalty-wrapper">
                 <mat-checkbox labelPosition="before" formControlName="penalty">
                   {{"labels.commons.Is" | translate}} {{"labels.inputs.Penalty" | translate}}
+                </mat-checkbox>
+              </div>
+
+              <div fxFlex="34%" class="principalCharge-wrapper">
+                <mat-checkbox labelPosition="before" formControlName="principalCharge">
+                  {{"labels.commons.Is" | translate}} {{"labels.inputs.PrincipalCharge" | translate}}
                 </mat-checkbox>
               </div>
             </div>

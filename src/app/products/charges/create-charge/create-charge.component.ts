@@ -85,6 +85,7 @@ export class CreateChargeComponent implements OnInit {
       'amount': ['', [Validators.required, Validators.pattern('^\\s*(?=.*[1-9])\\d*(?:\\.\\d+)?\\s*$')]],
       'active': [false],
       'penalty': [false],
+      'principalCharge': [false],
       'taxGroupId': [''],
       'minCap': [''],
       'maxCap': ['']
@@ -159,6 +160,7 @@ export class CreateChargeComponent implements OnInit {
   setConditionalControls() {
     this.chargeForm.get('chargeAppliesTo').valueChanges.subscribe((chargeAppliesTo) => {
       this.chargeForm.get('penalty').enable();
+      this.chargeForm.get('principalCharge').enable();
       switch (chargeAppliesTo) {
         case 1: // Loan
           this.chargeForm.addControl('chargePaymentMode', new UntypedFormControl('', Validators.required));
@@ -176,6 +178,7 @@ export class CreateChargeComponent implements OnInit {
           this.chargeForm.removeControl('chargePaymentMode');
           this.chargeForm.removeControl('incomeAccountId');
           this.chargeForm.get('penalty').setValue(false);
+          this.chargeForm.get('principalCharge').setValue(false);
           break;
       }
       this.chargeForm.get('chargeCalculationType').reset();
@@ -188,6 +191,7 @@ export class CreateChargeComponent implements OnInit {
       this.chargeForm.removeControl('addFeeFrequency');
       if (this.chargeForm.get('chargeAppliesTo').value !== 4) {
         this.chargeForm.get('penalty').enable();
+        this.chargeForm.get('principalCharge').enable();
       }
       switch (chargeTimeType) {
         case 6: // Annual Fee
@@ -200,6 +204,7 @@ export class CreateChargeComponent implements OnInit {
           break;
         case 9: // Overdue Fee
           this.chargeForm.get('penalty').setValue(true);
+          this.chargeForm.get('principalCharge').setValue(true);
           this.chargeForm.addControl('addFeeFrequency', new UntypedFormControl(false));
           this.chargeForm.get('addFeeFrequency').valueChanges.subscribe((addFeeFrequency) => {
             if (addFeeFrequency) {
