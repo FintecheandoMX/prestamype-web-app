@@ -175,6 +175,12 @@
             </mat-checkbox>
           </div>
 
+          <div fxFlex="48%" class="send-password-to-email-wrapper" *ngIf="showPrincipalCharge">
+            <mat-checkbox labelPosition="before" formControlName="principalCharge">
+              {{"labels.commons.Is" | translate}} {{"labels.inputs.PrincipalCharge" | translate}}
+            </mat-checkbox>
+          </div>
+
         </div>
 
       </mat-card-content>

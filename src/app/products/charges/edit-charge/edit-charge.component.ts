@@ -36,6 +36,8 @@ export class EditChargeComponent implements OnInit {
   chargeCalculationTypeOptions: any;
   /** Show Penalty. */
   showPenalty = true;
+  /** Show PrincipalChage. */
+  showPrincipalCharge = true;
   /** Add Fee Frequency. */
   addFeeFrequency = true;
   /** Show GL Accounts. */
@@ -80,6 +82,7 @@ export class EditChargeComponent implements OnInit {
       'amount': [this.chargeData.amount, Validators.required],
       'active': [this.chargeData.active],
       'penalty': [this.chargeData.penalty],
+      'principalCharge': [this.chargeData.principalCharge],
       'minCap': [this.chargeData.minCap],
       'maxCap': [this.chargeData.maxCap],
       'chargeTimeType': [this.chargeData.chargeTimeType.id, Validators.required],
@@ -113,6 +116,7 @@ export class EditChargeComponent implements OnInit {
         this.addFeeFrequency = false;
         this.showGLAccount = false;
         this.showPenalty = false;
+        this.showPrincipalCharge = false;        
         break;
       }
       default: {
